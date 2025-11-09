@@ -12,3 +12,10 @@
         padding: 50px;
         margin: 20px;
       }
+
+.svgImage{
+  width: 300px;
+  padding: 15px;
+  border: 2px solid yellow;
+  border-radius: 15px;
+}
