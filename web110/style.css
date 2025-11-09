@@ -1,0 +1,14 @@
+ body {
+        background-color: Black;
+        font-size: 20px;
+      }
+      title {
+        color: Indigo;
+      }
+      div {
+        background-color: PeachPuff;
+        width: auto;
+        border: 15px solid Linen;
+        padding: 50px;
+        margin: 20px;
+      }
