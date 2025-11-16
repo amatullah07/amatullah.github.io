@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amatullah Web110 Assignment 10</title>
-    <link rel="stylesheet" href="style.css">
-     <style>
-      body {
-        background-color: black;
-        font-size: 20px;
-      }
-      div {
-        background-color: PeachPuff;
-        border: 15px solid Linen;
-        padding: 50px;
-        margin: auto;
-      }
-     </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amatullah Web110 Assignment 12</title>
+  <style>
+    body {
+      background-color: black;
+      color: rgb(8, 4, 0);
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: left;
+      margin-bottom: 30px;
+      color:bisque
+    }
+
+    div.section {
+      background-color: PeachPuff;
+      color: black;
+      border: 15px solid Linen;
+      padding: 30px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    canvas {
+      display: block;
+      margin: 15px auto;
+      background-color: white;
+      border: 1px solid black;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-   <h1 style="color:bisque">Learning Outcomes from Week 11</h1> 
-   <h4>Heading</h4>
-   
-<h1 id="myName"></h1>
-<script>
-  document.getElementById("myName").innerHTML = "Amatullah";
-</script>
 
-<h4>Time</h4>
-<p id="text"></p>
-<script>
-  document.getElementById("text").innerHTML = new Date();
-</script>
+  <h1 id="myName"></h1>
+  <script>
+    document.getElementById("myName").innerHTML = "Amatullah";
+  </script>
 
-<h4>Name Canvas</h4>
-<canvas id="canvasName" width="360" height="240"></canvas>
-<script>
-  var c = document.getElementById("canvasName");
-  var ctx = c.getContext("2d");
-  ctx.fillStyle = "black";
-  ctx.font = "16px sans-serif";
-  ctx.textAlign = "center";
-  ctx.fillText("Amatullah", 180, 50);
-</script>
+  <div class="section">
 
-<h4>Circle Canvas</h4>
-<canvas id="canvasCircle" width="360" height="240"></canvas>
-<script>
-  var c2 = document.getElementById("canvasCircle");
-  var ctx2 = c2.getContext("2d");
-  ctx2.beginPath();
-  ctx2.arc(60, 140, 35, 0, 2 * Math.PI);
-  ctx2.fillStyle = "maroon";
-  ctx2.fill();
-</script>
+    <h4>Current Date and Time</h4>
+    <p id="currentDate"></p>
+    <script>
+      document.getElementById("currentDate").innerHTML = new Date();
+    </script>
+
+    <h4>Name Canvas</h4>
+    <canvas id="canvasName" width="360" height="240"></canvas>
+    <script>
+      var c = document.getElementById("canvasName");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "black";
+      ctx.font = "24px sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("Amatullah", c.width / 2, 50);
+    </script>
+
+    <h4>Circle Canvas</h4>
+    <canvas id="canvasCircle" width="360" height="240"></canvas>
+    <script>
+      var c2 = document.getElementById("canvasCircle");
+      var ctx2 = c2.getContext("2d");
+      ctx2.fillStyle = "white";
+      ctx2.fillRect(0, 0, c2.width, c2.height);
+      ctx2.beginPath();
+      ctx2.arc(180, 120, 60, 0, 2 * Math.PI);
+      ctx2.fillStyle = "maroon";
+      ctx2.fill();
+      ctx2.closePath();
+    </script>
+
+  </div>
+</body>
+</html>
