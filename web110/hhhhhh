@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Wrap everything */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* space between heading + cards */
+  }
+
+  /* Heading */
+  .page-title {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Grid for the 4 cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-gap: 40px;
+  }
+
+  /* Flip card box */
+  .flip-card {
+    background-color: transparent;
+    width: 350px;         /* rectangle width */
+    height: 200px;        /* rectangle height */
+    perspective: 1000px;
+    border-radius: 15px;  /* soft rounded corners */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.15);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Front + Back shared styling */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  /* Front side */
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Back side */
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+
+</head>
+<body>
+
+<div class="page-container">
+
+  <h1 class="page-title">Statistics Review Cards</h1>
+
+  <div class="card-grid">
+
+    <!-- CARD 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img1.png">
+        </div>
+        <div class="flip-card-back">
+          <h2>Answer 1</h2>
+          <p>Description or explanation</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img2.png">
+        </div>
+        <div class="flip-card-back">
+          <h2>Answer 2</h2>
+          <p>Some helpful text</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img3.png">
+        </div>
+        <div class="flip-card-back">
+          <h2>Answer 3</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img4.png">
+        </div>
+        <div class="flip-card-back">
+          <h2>Answer 4</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
