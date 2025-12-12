@@ -1,16 +1,16 @@
  body {
-        background-color: rgb(107, 98, 98);
+        background-color: rgb(32, 2, 18);
         font-size: 20px;
         font-family:'Times New Roman', Times, serif
       }
       h1 {
-        color: Indigo;
+        color: rgb(134, 45, 110);
       }
     
       div {
-        background-color: PeachPuff;
+        background-color: rgb(237, 207, 228);
         width: auto;
-        border: 15px solid burlywood;
+        border: 15px solid rgb(134, 45, 110);
         padding: 50px;
         margin: 20px;
       }
