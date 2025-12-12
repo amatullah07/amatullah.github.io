@@ -80,8 +80,15 @@ ul, li {
 }
 .flip-card img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+}
+.learn-more {
+  color:white;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: underline;
 }
 </style>
 </head>
@@ -93,17 +100,12 @@ ul, li {
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/comp graphs.png" alt="Avatar" style="width:300px;height:300px; object-fit: cover;">
+        <img src="images/comp graphs.png" alt="Avatar">
       </div>
       <div class="flip-card-back"> 
-    <ul>
-        <li>Computer graphics are just computer-made pictures, and they mainly come in two types.</li>
-        <li>Raster graphics are made of tiny colored squares. When you zoom in, you can see the little pixels.</li>
-        <li>Vector graphics are made from shapes and math, so they stay smooth no matter how big you make them.</li>
-        <li>Photos are usually raster because they need a lot of detail.</li>
-        <li>Logos and icons are often vector because they need to stay sharp on any screen.</li>
-        <li>Think of raster like phone photos and vector like clean cartoon-style logos.</li>
-    </ul>
+      <p>Computer graphics is the creation, manipulation, and display of visual content on a computer using specialized hardware and software. 
+      </p>
+      <a href="computer graphics.html" class="learn-more">Click here to learn more about Computer Graphics</a>
       </div>
     </div>
   </div>
@@ -111,12 +113,12 @@ ul, li {
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/multimedia.png" alt="Avatar" style="width:300px;height:300px; object-fit: cover; object-fit: contain;" >
+        <img src="images/multimedia.png" alt="Avatar">
       </div>
-      <div class="flip-card-back">
-        <h1>Jane Doe</h1> 
-        <p>Designer</p> 
-        <p>We love her too</p>
+        <div class="flip-card-back">
+        <p>Multimedia is a technique (such as the combining of sound, video, and text) for expressing ideas (as in communication, entertainment, or art) in which several media are employed.</p>
+        <a href="multimedia.html" class="learn-more">Click here to learn more about Multimedia</a>
+     </div>
       </div>
     </div>
   </div>
@@ -124,7 +126,7 @@ ul, li {
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/images in html.png" alt="Avatar" style="width:300px;height:300px; object-fit: cover;">
+        <img src="images/images in html.png">
       </div>
       <div class="flip-card-back">
         <h1>Mike Smith</h1> 
@@ -137,7 +139,7 @@ ul, li {
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/audio video utube.png" alt="Avatar" style="width:300px;height:300px; object-fit: cover;">
+        <img src="images/audio video utube.png">
       </div>
       <div class="flip-card-back">
         <h1>Anna Lee</h1> 
